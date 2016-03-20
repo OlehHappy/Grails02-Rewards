@@ -8,5 +8,6 @@ class Award {
     static hasMany = [orderItems: OrderItem]
 
     static constraints = {
+        type(inList: ["Purchase", "Reward"])
     }
 }
