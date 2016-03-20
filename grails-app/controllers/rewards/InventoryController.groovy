@@ -5,7 +5,6 @@ class InventoryController {
     def index() {
 
         render "Here is a list of everything."
-
     }
 
     def edit() {
@@ -17,5 +16,10 @@ class InventoryController {
     def remove() {
 
         render "You have one less than before."
+    }
+
+    def list() {
+        def allProducts = Product.list()
+        [allProducts: allProducts]
     }
 }
