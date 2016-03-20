@@ -8,8 +8,14 @@ class InventoryController {
 
     }
 
+    def edit() {
+        def productName = "Brealfast Blend"
+        def sku = "BB01"
+        [product: productName, sku: sku]
+    }
+
     def remove() {
 
-        render "You have one more."
+        render "You have one less than before."
     }
 }
