@@ -45,11 +45,11 @@
         </li>
     </content>
 
-    <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-        </div>
-    </div>
+    %{--<div class="svg" role="presentation">--}%
+        %{--<div class="grails-logo-container">--}%
+            %{--<asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>--}%
+        %{--</div>--}%
+    %{--</div>--}%
 
     <div id="content" role="main">
         <section class="row colset-2-its">
