@@ -1,6 +1,7 @@
 package rewards
 
 class WhiteboardController {
+    def calculationsService
 
     def index() { }
 
@@ -22,5 +23,20 @@ class WhiteboardController {
         render("</br>" + today.class)
         today = today + 1
         render("</br>New Date: " + today + "</br>")
+    }
+
+    def strings() {
+        def first = "Mike"
+        def last = "Kelly"
+        def fullName = "Mike Kelly"
+        def input = "SHOUTING"
+        def state = "ut"
+        def points = 4
+        render "You are living in ${state.toUpperCase()}"
+    }
+
+    def conditions() {
+        def welcomeMessage = calculationsService.welcome(params)
+        render welcomeMessage
     }
 }
