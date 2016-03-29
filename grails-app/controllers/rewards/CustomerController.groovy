@@ -1,14 +1,18 @@
 package rewards
 
 class CustomerController {
-    static scaffold = Customer
+    // static scaffold = Customer
 
     def lookup() {
-        def customerInstance = Customer.findAllByFirstNameIlikeAndTotalPointsGreaterThanEquals("B%", 3)
+
         [customerInstanceList: customerInstance]
     }
 
-    // def index() { }
+    def index() {
+      // params.max = 10
+      def customerInstance = Customer.list()
+      [customerInstanceList: Customer.list()]
+    }
 
     def checkin() { }
 }
