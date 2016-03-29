@@ -28,4 +28,9 @@ class CustomerController {
       def customerInstance = Customer.get(id)
       [customerInstance: customerInstance]
     }
+
+    def edit(Long id) {
+      def customerInstance = Customer.get(id)
+      [customerInstance: customerInstance]
+    }
 }
