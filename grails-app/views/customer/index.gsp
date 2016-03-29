@@ -54,7 +54,7 @@
             </table>
 
             <div class="pagination">
-                <g:paginate total="${customerCount ?: 0}" />
+                <g:paginate total="${customerInstanceCount ?: 0}" />
             </div>
         </div>
     </body>
